@@ -1,0 +1,24 @@
+{
+  "name": "learn-node",
+  "version": "1.0.0",
+  "description": "My Notes From The Udemy Course ***Learn & Understand NodeJS*** by **Anthony Alicea**.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodwinZA/learning-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodwinZA/learning-node/issues"
+  },
+  "homepage": "https://github.com/RodwinZA/learning-node#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

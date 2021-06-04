@@ -1,0 +1,26 @@
+<!-- index.ejs -->
+
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/style.css">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        Hello world!
+        <form action="/person" method="POST">
+            First Name: <input type="text" id="firstname" name="firstname"> <br>
+            Last Name: <input type="text" id="lastname" name="lastname"> <br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <script>
+            $.ajax({
+                type: "POST",
+                url: "/personjson",
+                data: JSON.stringify({ firstname: "Jane", lastname: "Doe"}),
+                dataType: "json",
+                contentType: "application/json"
+            })
+        </script>
+    </body>
+</html>
